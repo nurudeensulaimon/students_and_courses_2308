@@ -14,5 +14,6 @@ attr_reader :name,
 
   def grade
     Float(@scores.sum)/Float(@scores.length)
+    #binding.pry
   end
 end
