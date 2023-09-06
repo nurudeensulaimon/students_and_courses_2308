@@ -20,4 +20,10 @@ RSpec.describe Gradebook do
     expect(@gradebook.instructor).to eq("Abdul")
     expect(@gradebook.courses).to eq([])
   end
+
+  it "has a command method add_course" do
+     @gradebook.add_course("Backend")
+     @gradebook.add_course("OOP")
+     expect(@gradebook.courses).to eq(["Backend", "OOP"])
+  end
 end
